@@ -14,18 +14,82 @@
     overflow: auto;
 }
 
-div {
+/* div {
     border: 1px solid black;
-}
+} */
 
 .left {
     display: flex;
     flex-direction: column;
     flex: 3;
-    background-color: green;
+    /* background-color: green; */
+    justify-content: space-between;
+    background-size: 100% 100%;
+    background: url(./resources/cat.webp);
+    background-size: cover;
 }
 
+
 .right {
+    display: flex;
+    flex-direction: column;
     flex: 7;
-    background-color: yellow;
+    /* background-color: yellow; */
+}
+
+.logo {
+    margin-top: 200px;
+    height: 150px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.caption {
+    /* background-color: violet; */
+    height: 2rem;
+    text-align: center;
+
+}
+
+.right.section > div {
+    padding: 30px;
+}
+
+.right.section > .first.row {
+    display: flex;
+    flex-direction: column;
+    flex: auto 1 1;
+    background-color: rgba(158, 103, 0, 0.05);
+    justify-content: end;
+}
+
+.right.section > .first.row > p {
+}
+
+.right.section > .second.row {
+    flex: auto 1 1;
+    
+    /* background-color: cornflowerblue; */
+}
+
+.right.section > .third.row {
+    flex: auto 1 1;
+    background-color: rgba(158, 103, 0, 0.05);
+}
+
+.logo > img {
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
 }
